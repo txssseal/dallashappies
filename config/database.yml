@@ -1,0 +1,23 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: dallas_development
+  pool: 5
+  username: colton
+  password: cookie12
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: dallas_test
+  pool: 5
+  username: colton  
+  password: cookie12
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: dallas
+  pool: 5
+  username: colton  
+  password: cookie12

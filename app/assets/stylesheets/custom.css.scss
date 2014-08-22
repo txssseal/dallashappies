@@ -1,0 +1,14 @@
+@import "bootstrap";
+
+ul {
+	list-style: none;
+}
+
+li {
+	display: inline;
+	padding-right: 1em; 
+}
+
+@-moz-document url-prefix() {
+  fieldset { display: table-cell; }
+}

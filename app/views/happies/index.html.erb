@@ -1,0 +1,56 @@
+<div class = "row">
+  <div class = "col-md-12 col-xs-12">
+    <center><h1>Dallas Happies</h1></center>
+  </br>
+  </br>
+    <div class = "table-responsive">
+    
+    <table class = "table table-striped">
+      <thead>
+        <tr>
+          <th>Bar Name</th>
+          <th>Day</th>
+          <th>Location</th>
+          <th>Deals</th>
+          <th>Phone Number</th>
+        </tr> 
+      </thead>
+      <tbody>
+    
+    <% @happies.each do |happy| %>
+          <tr>
+            <td><%= happy.name %></td>
+            <td><%= happy.day %></td>
+            <td><%= happy.location %></td>
+            <td><%= happy.deal %></td>
+            <td><%= happy.phonenumber %></td>
+          </tr>
+
+
+        
+      
+
+
+    <% end %>
+    </tbody>
+  </table>
+  </div>
+  </div>
+</div>
+
+
+
+
+
+<!--<h1>Listing happies</h1>
+
+    <%# @happies.each do |happy| %>
+      <tr>
+        <td><%#= link_to 'Show', happy %></td>
+        <td><%#= link_to 'Edit', edit_happy_path(happy) %></td>
+        <td><%#= link_to 'Destroy', happy, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <%# end %>
+ 
+
+<%#= link_to 'New Happy', new_happy_path %>-->
