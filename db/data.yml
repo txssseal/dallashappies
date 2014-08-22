@@ -1,0 +1,13 @@
+
+---
+happies:
+  columns:
+  - id
+  - created_at
+  - updated_at
+  - name
+  - day
+  - phonenumber
+  - deal
+  - location
+  records: 
