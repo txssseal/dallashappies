@@ -25,15 +25,21 @@
             <td><%= happy.deal %></td>
             <td><%= happy.phonenumber %></td>
           </tr>
-
-
-        
-      
-
-
-    <% end %>
+      <% end %>
     </tbody>
   </table>
+</br>
+  <center><%= form_tag happies_path, :method => :get do %>
+    <p>
+      <%= text_field_tag :search, params[:search] %>
+      <%= submit_tag "Search", :name => nil %>
+    </p>
+  <% end %></center>
+
+
+
+  <center><%= will_paginate @posts %></center>
+  <center><%= link_to("Reset", root_path) %></center>
   </div>
   </div>
 </div>

@@ -3,6 +3,11 @@ ruby '2.0.0'
 gem 'rails', '4.0.2'
 gem 'pg', '0.15.1'
 gem 'bootstrap-sass', '3.2.0'
+gem 'will_paginate', '~> 3.0'
+gem 'will_paginate-bootstrap'
+gem 'sunspot_rails'
+gem 'sunspot_solr'
+gem 'progress_bar'
 
 
 group :development do
