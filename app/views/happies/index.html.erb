@@ -29,13 +29,13 @@
     </tbody>
   </table>
 </br>
+<center><p style = "text-decoration:underline;">Search By Day or Bar</p></center>
   <center><%= form_tag happies_path, :method => :get do %>
     <p>
       <%= text_field_tag :search, params[:search] %>
       <%= submit_tag "Search", :name => nil %>
     </p>
   <% end %></center>
-
 
 
   <center><%= will_paginate @posts %></center>

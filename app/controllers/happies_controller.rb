@@ -7,8 +7,6 @@ class HappiesController < ApplicationController
       fulltext params[:search]
       paginate :page => 1, :per_page => 550
     end
-    #@happies = @search.results
-    #@happies = Happy.all
     @happies = Happy.where(id: @search.results.map(&:id)).page(params[:page])
   end
 

@@ -3,7 +3,7 @@ class Happy < ActiveRecord::Base
 
 	searchable do
 		text :name, :boost => 5
-		text :day
+		text :day, :boost => 10
 	end
 
 end
