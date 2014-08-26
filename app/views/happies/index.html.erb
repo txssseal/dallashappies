@@ -2,6 +2,13 @@
   <div class = "col-md-12 col-xs-12">
     <center><h1>Dallas Happies</h1></center>
   </br>
+  <center><p style = "text-decoration:underline;">Search By Day or Bar</p></center>
+  <center><%= form_tag happies_path, :method => :get do %>
+    <p>
+      <%= text_field_tag :search, params[:search] %>
+      <%= submit_tag "Search", :name => nil %>
+    </p>
+  <% end %></center>
   </br>
     <div class = "table-responsive">
     
@@ -17,7 +24,7 @@
       </thead>
       <tbody>
     
-    <% @happies.each do |happy| %>
+    <% @happies.order("day").each do |happy| %>
           <tr>
             <td><%= happy.name %></td>
             <td><%= happy.day %></td>
@@ -28,15 +35,6 @@
       <% end %>
     </tbody>
   </table>
-</br>
-<center><p style = "text-decoration:underline;">Search By Day or Bar</p></center>
-  <center><%= form_tag happies_path, :method => :get do %>
-    <p>
-      <%= text_field_tag :search, params[:search] %>
-      <%= submit_tag "Search", :name => nil %>
-    </p>
-  <% end %></center>
-
 
   <center><%= will_paginate @posts %></center>
   <center><%= link_to("Reset", root_path) %></center>
