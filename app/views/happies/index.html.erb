@@ -6,10 +6,11 @@
   <center><%= form_tag happies_path, :method => :get do %>
     <p>
       <%= text_field_tag :search, params[:search] %>
-      <%= submit_tag "Search", :name => nil %>
+      <%= submit_tag "Search", :name => nil, %>
     </p>
   <% end %></center>
-  </br>
+  <center><%= will_paginate @posts %></center>
+  <center><%= link_to("Reset", root_path) %></center>
     <div class = "table-responsive">
     
     <table class = "table table-striped">

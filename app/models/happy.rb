@@ -1,5 +1,5 @@
 class Happy < ActiveRecord::Base
-	self.per_page = 7
+	self.per_page = 20
 
 	searchable do
 		text :name, :boost => 5
