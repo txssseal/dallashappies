@@ -1,4 +1,4 @@
-<%= form_for(@happy) do |f| %>
+<%= bootstrap_form_for(@happy) do |f| %>
   <% if @happy.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@happy.errors.count, "error") %> prohibited this happy from being saved:</h2>
@@ -10,6 +10,40 @@
       </ul>
     </div>
   <% end %>
+
+    
+    <%= f.text_field :name, value: "Bar or Restaurant Name" %>
+
+    <%= f.form_group :day, label: { text: "Day"} do %>
+        <%= f.radio_button :day, "Monday", label: "Monday", checked: true %>
+        <%= f.radio_button :day, "Tuesday", label: "Tuesday" %>
+        <%= f.radio_button :day, "Wednesday", label: "Wednesday" %>
+        <%= f.radio_button :day, "Thursday", label: "Thursday" %>
+        <%= f.radio_button :day, "Friday", label: "Friday" %>
+        <%= f.radio_button :day, "Saturday", label: "Saturday" %>
+        <%= f.radio_button :day, "Sunday", label: "Sunday" %>
+    <% end %>
+
+    <%= f.text_field :phonenumber, value: "Ex: 2142225555, No () or - or spaces" %>
+
+    <%= f.text_field :deal, value: "Happy Hour", label: "Happy Hour/Brunch Special" %>
+
+    
+    <%= f.form_group :location, label: { text: "Location"} do %>
+      <%= f.radio_button :location, "Knox/Henderson", label: "Knox/Henderson", checked: true %>
+        <%= f.radio_button :location, "Greenville", label: "Greenville" %>
+        <%= f.radio_button :location, "Deep Ellum", label: "Deep Ellum" %>
+        <%= f.radio_button :location, "Uptown", label: "Uptown" %>
+        <%= f.radio_button :location, "Downtown", label: "Downtown" %>
+        <%= f.radio_button :location, "Bishop Arts", label: "Bishop Arts" %>
+        <%= f.radio_button :location, "Trinity Groves", label: "Trinity Groves" %>
+        <%= f.radio_button :location, "Addison", label: "Addison" %>
+        <%= f.radio_button :location, "SMU", label: "SMU" %>
+    <% end %>
+
+
+
+
 
   <div class="actions">
     <%= f.submit %>

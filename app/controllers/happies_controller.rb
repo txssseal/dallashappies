@@ -5,6 +5,7 @@ class HappiesController < ApplicationController
   def index
     @search = Happy.search do
       fulltext params[:search]
+      facet(:ddd)
       paginate :page => 1, :per_page => 550
     end
     @happies = Happy.where(id: @search.results.map(&:id)).page(params[:page])
@@ -57,6 +58,6 @@ class HappiesController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def happy_params
-      params[:happy]
+      params.require(:happy).permit(:name, :day, :phonenumber, :deal, :location)
     end
 end

@@ -8,7 +8,7 @@ gem 'will_paginate-bootstrap'
 gem 'sunspot_rails'
 gem 'sunspot_solr'
 gem 'progress_bar'
-
+gem 'bootstrap_form'
 
 group :development do
   #gem 'sqlite3', '1.3.8'
