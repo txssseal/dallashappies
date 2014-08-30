@@ -2,15 +2,12 @@ class Happy < ActiveRecord::Base
 	self.per_page = 20
 
 	searchable do
-		text :name, :boost => 10
-		text :day, :boost => 10
+		text :name, :day, :deal, :boost => 10
 
-		string :ddd
+		string :day_str do
+  			day
+		end
 
-	end
-
-	def ddd
-		day
 	end
 
 	

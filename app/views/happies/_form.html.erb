@@ -14,7 +14,7 @@
     
     <%= f.text_field :name, value: "Bar or Restaurant Name" %>
 
-    <%= f.form_group :day, label: { text: "Day"} do %>
+    <%= f.form_group :day, :class => "radio-inline", label: { text: "Day"} do %>
         <%= f.radio_button :day, "Monday", label: "Monday", checked: true %>
         <%= f.radio_button :day, "Tuesday", label: "Tuesday" %>
         <%= f.radio_button :day, "Wednesday", label: "Wednesday" %>
@@ -29,7 +29,7 @@
     <%= f.text_field :deal, value: "Happy Hour", label: "Happy Hour/Brunch Special" %>
 
     
-    <%= f.form_group :location, label: { text: "Location"} do %>
+    <%= f.form_group :location, :class => "radio-inline", label: { text: "Location"} do %>
       <%= f.radio_button :location, "Knox/Henderson", label: "Knox/Henderson", checked: true %>
         <%= f.radio_button :location, "Greenville", label: "Greenville" %>
         <%= f.radio_button :location, "Deep Ellum", label: "Deep Ellum" %>

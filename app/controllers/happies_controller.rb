@@ -5,7 +5,7 @@ class HappiesController < ApplicationController
   def index
     @search = Happy.search do
       fulltext params[:search]
-      facet(:ddd)
+      facet(:day_str)
       paginate :page => 1, :per_page => 550
     end
     @happies = Happy.where(id: @search.results.map(&:id)).page(params[:page])
