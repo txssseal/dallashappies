@@ -26,6 +26,7 @@
           <th>Location</th>
           <th>Deals</th>
           <th>Phone Number</th>
+          <th>Show</th>
         </tr> 
       </thead>
       <tbody>
@@ -37,6 +38,7 @@
             <td><%= happy.location %></td>
             <td><%= happy.deal %></td>
             <td><%= happy.phonenumber %></td>
+            <td><%= link_to("Show", happy) %></td>
           </tr>
       <% end %>
     </tbody>

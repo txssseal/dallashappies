@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 20140822161937) do
     t.datetime "updated_at"
     t.string   "name"
     t.string   "day"
-    t.string   "phonenumber", limit: nil
+    t.string   "phonenumber"
     t.string   "deal"
     t.string   "location"
   end

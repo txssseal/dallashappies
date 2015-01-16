@@ -12,7 +12,7 @@ test:
   database: dallas_test
   pool: 5
   username: colton  
-  password: cookie12
+  password: 
 
 production:
   adapter: postgresql
@@ -20,4 +20,4 @@ production:
   database: dallas
   pool: 5
   username: colton  
-  password: cookie12
+  password: 
