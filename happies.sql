@@ -92,29 +92,29 @@ ALTER TABLE ONLY happies ALTER COLUMN id SET DEFAULT nextval('happies_id_seq'::r
 
 COPY happies (id, created_at, updated_at, name, day, phonenumber, deal, location) FROM stdin;
 1	\N	\N	Absinthe Lounge	Monday	(214) 421-5500	HH $2 draws $3 wells $4 calls $5 martinis from 4-9	Bishop Arts
-2	\N	\N	Absinthe Lounge	Tuesday	(214) 421-5500	HH $2 draws $3 wells $4 calls $5 martinis from 4-9	Bishop Arts
-3	\N	\N	Absinthe Lounge	Wednesday	(214) 421-5500	HH $2 draws $3 wells $4 calls $5 martinis from 4-9	Bishop Arts
-4	\N	\N	Absinthe Lounge	Thursday	(214) 421-5500	HH $2 draws $3 wells $4 calls $5 martinis from 4-9	Bishop Arts
-5	\N	\N	Absinthe Lounge	Friday	(214) 421-5500	HH $2 draws $3 wells $4 calls $5 martinis from 4-9	Bishop Arts
-6	\N	\N	Absinthe Lounge	Saturday	(214) 421-5500	HH $2 draws $3 wells $4 calls $5 martinis from 4-9	Bishop Arts
-7	\N	\N	Absinthe Lounge	Sunday	(214) 421-5500	HH $2 draws $3 wells $4 calls $5 martinis from 4-9	Bishop Arts
-8	\N	\N	Barcadia	Monday	(214) 821-7300	HH $4 house margs $1 off all beer1/2 price food all day	Knox/Henderson
-9	\N	\N	Barcadia	Tuesday	(214) 821-7300	HH $3 Texas drafts $1 off all drinks from 4-8	Knox/Henderson
-10	\N	\N	Barcadia	Wednesday	(214) 821-7300	HH $3 pints $1 off all drinks from 4-8	Knox/Henderson
-11	\N	\N	Barcadia	Thursday	(214) 821-7300	HH from 4-8	Knox/Henderson
-12	\N	\N	Barcadia	Friday	(214) 821-7300	HH from 4-8	Knox/Henderson
-13	\N	\N	Barcadia	Saturday	(214) 821-7300	HH from 4-8	Knox/Henderson
-14	\N	\N	Barcadia	Sunday	(214) 821-7300	Brunch $4 mimosas and bloodys $5 fruit mojitos from 11-3 $4 u-call-its from 3 till close	Knox/Henderson
-15	\N	\N	Barley House	Monday	(214) 824-0306	HH all day $2 domestic drafts till 7 free pool	SMU
-16	\N	\N	Barley House	Tuesday	(214) 824-0306	HH $2 domestic drafts all day	SMU
-17	\N	\N	Barley House	Wednesday	(214) 824-0306	HH 1/2 price food till 8 $2 select bottles all day	SMU
-18	\N	\N	Barley House	Thursday	(214) 824-0306	HH $4 Grey Goose Jack Daniels Bacardi and Bombay $2 wells all day	SMU
-19	\N	\N	Barley House	Friday	(214) 824-0306	Live Music	SMU
-20	\N	\N	Barley House	Saturday	(214) 824-0306	HH $3 bloodies $8 domestic pitchers $12 domestic buckets from 11-6 	SMU
-21	\N	\N	Barley House	Sunday	(214) 824-0306	HH $3 bloodies $8 domestic pitchers $12 domestic buckets from 11-6 	SMU
-22	\N	\N	Blackfriar	Monday	(214) 953-0599	HH $1 off all drafts from 3-7	Uptown
-23	\N	\N	Blackfriar	Tuesday	(214) 953-0599	HH $1 off all drafts from 3-7	Uptown
-24	\N	\N	Blackfriar	Wednesday	(214) 953-0599	HH $1 off all drafts from 3-7	Uptown
+1	\N	\N	Absinthe Lounge	Tuesday	(214) 421-5500	HH $2 draws $3 wells $4 calls $5 martinis from 4-9	Bishop Arts
+1	\N	\N	Absinthe Lounge	Wednesday	(214) 421-5500	HH $2 draws $3 wells $4 calls $5 martinis from 4-9	Bishop Arts
+1	\N	\N	Absinthe Lounge	Thursday	(214) 421-5500	HH $2 draws $3 wells $4 calls $5 martinis from 4-9	Bishop Arts
+1	\N	\N	Absinthe Lounge	Friday	(214) 421-5500	HH $2 draws $3 wells $4 calls $5 martinis from 4-9	Bishop Arts
+1	\N	\N	Absinthe Lounge	Saturday	(214) 421-5500	HH $2 draws $3 wells $4 calls $5 martinis from 4-9	Bishop Arts
+1	\N	\N	Absinthe Lounge	Sunday	(214) 421-5500	HH $2 draws $3 wells $4 calls $5 martinis from 4-9	Bishop Arts
+2	\N	\N	Barcadia	Monday	(214) 821-7300	HH $4 house margs $1 off all beer1/2 price food all day	Knox/Henderson
+2	\N	\N	Barcadia	Tuesday	(214) 821-7300	HH $3 Texas drafts $1 off all drinks from 4-8	Knox/Henderson
+2	\N	\N	Barcadia	Wednesday	(214) 821-7300	HH $3 pints $1 off all drinks from 4-8	Knox/Henderson
+2	\N	\N	Barcadia	Thursday	(214) 821-7300	HH from 4-8	Knox/Henderson
+2	\N	\N	Barcadia	Friday	(214) 821-7300	HH from 4-8	Knox/Henderson
+2	\N	\N	Barcadia	Saturday	(214) 821-7300	HH from 4-8	Knox/Henderson
+2	\N	\N	Barcadia	Sunday	(214) 821-7300	Brunch $4 mimosas and bloodys $5 fruit mojitos from 11-3 $4 u-call-its from 3 till close	Knox/Henderson
+3	\N	\N	Barley House	Monday	(214) 824-0306	HH all day $2 domestic drafts till 7 free pool	SMU
+3	\N	\N	Barley House	Tuesday	(214) 824-0306	HH $2 domestic drafts all day	SMU
+3	\N	\N	Barley House	Wednesday	(214) 824-0306	HH 1/2 price food till 8 $2 select bottles all day	SMU
+3	\N	\N	Barley House	Thursday	(214) 824-0306	HH $4 Grey Goose Jack Daniels Bacardi and Bombay $2 wells all day	SMU
+3	\N	\N	Barley House	Friday	(214) 824-0306	Live Music	SMU
+3	\N	\N	Barley House	Saturday	(214) 824-0306	HH $3 bloodies $8 domestic pitchers $12 domestic buckets from 11-6 	SMU
+3	\N	\N	Barley House	Sunday	(214) 824-0306	HH $3 bloodies $8 domestic pitchers $12 domestic buckets from 11-6 	SMU
+4	\N	\N	Blackfriar	Monday	(214) 953-0599	HH $1 off all drafts from 3-7	Uptown
+4	\N	\N	Blackfriar	Tuesday	(214) 953-0599	HH $1 off all drafts from 3-7	Uptown
+4	\N	\N	Blackfriar	Wednesday	(214) 953-0599	HH $1 off all drafts from 3-7	Uptown
 25	\N	\N	Blackfriar	Thursday	(214) 953-0599	HH $1 off all drafts from 3-7	Uptown
 26	\N	\N	Blackfriar	Friday	(214) 953-0599	HH $1 off all drafts from 3-7	Uptown
 27	\N	\N	Blackfriar	Saturday	(214) 953-0600	Brunch $4.50 per or $14 bottomless mimosas $3 red stellas and bloodys $3 per or $9 carafes sangria from 12-4	Uptown
