@@ -1,17 +1,7 @@
 <div class = "row">
   <div class = "col-md-12 col-xs-12">
-    <center><img style = "width: 50%;" src="/assets/dh.png"></center>
-  </br>
-    <%= form_tag happies_path, :method => :get do %>
     
-  
-      <%= text_field_tag :search, params[:search],
-       :placeholder => 'Search by Day, Bar, or Brunch!', :class => 'form-control', 
-       :style => 'width: 70%; margin-left: 6em;' %>
-      <%= submit_tag "Search", :name => nil,
-       :class => 'btn btn-success btn-sm', 
-       :style => 'margin-top: -2.75em; margin-right: 8.7em; float:right; width: 10%; height: 2.75em;'%>
-  <% end %>
+  <%= render 'layouts/search_form' %>
   <%#= link_to("Cant find your bar?", new_happy_path) %>
   <center><%= will_paginate @posts, :style => 'margin-top: -0.2em;' %></center>
   <center><%= link_to("Reset", root_path, :style => 'margin-top: -1em;') %></center>
@@ -33,6 +23,7 @@
     
     <% @happies.order("day").each do |happy| %>
           <tr>
+            <td><%= happy.id %></td>
             <td><%= happy.name %></td>
             <td><%= happy.day %></td>
             <td><%= happy.location %></td>

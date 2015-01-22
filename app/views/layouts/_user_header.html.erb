@@ -1,0 +1,17 @@
+<center><img style = "width: 50%;" src="/assets/dh.png"></center>
+
+<% if user_signed_in? %>
+
+	<%= link_to "Home", root_path %>
+	
+	<%= link_to "Create a new happy!", new_happy_path %>
+
+	<%= link_to "Sign Out", destroy_user_session_path, :method => :delete %>
+
+<% else %>
+
+	<%= link_to "Sign In", new_user_session_path %>
+
+	<%= link_to "Sig up to Edit!!", new_user_registration_path %>
+
+<% end %>

@@ -12,6 +12,7 @@ gem 'bootstrap_form'
 gem 'unicorn'
 gem 'resque'
 gem 'newrelic_rpm'
+gem 'devise'
 
 group :development do
   #gem 'sqlite3', '1.3.8'

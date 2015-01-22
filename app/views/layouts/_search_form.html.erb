@@ -1,0 +1,11 @@
+</br>
+    <%= form_tag happies_path, :method => :get do %>
+    
+  
+      <%= text_field_tag :search, params[:search],
+       :placeholder => 'Search by Day, Bar, or Brunch!', :class => 'form-control', 
+       :style => 'width: 70%; margin-left: 6em;' %>
+      <%= submit_tag "Search", :name => nil,
+       :class => 'btn btn-success btn-sm', 
+       :style => 'margin-top: -2.75em; margin-right: 8.7em; float:right; width: 10%; height: 2.75em;'%>
+  <% end %>

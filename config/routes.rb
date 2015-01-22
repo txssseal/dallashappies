@@ -1,5 +1,6 @@
 Dallashappyhour::Application.routes.draw do
   
+  devise_for :users
   resources :happies
   root 'happies#index'
 

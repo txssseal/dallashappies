@@ -26,6 +26,7 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 0.3.37)
     arel (4.0.2)
+    bcrypt (3.1.9)
     bootstrap-sass (3.2.0.0)
       sass (~> 3.2)
     bootstrap_form (2.1.1)
@@ -37,6 +38,13 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.7.1)
+    devise (3.4.1)
+      bcrypt (~> 3.0)
+      orm_adapter (~> 0.1)
+      railties (>= 3.2.6, < 5)
+      responders
+      thread_safe (~> 0.1)
+      warden (~> 1.2.3)
     erubis (2.7.0)
     execjs (2.2.1)
     highline (1.6.21)
@@ -61,6 +69,7 @@ GEM
     nokogiri (1.6.3.1)
       mini_portile (= 0.6.0)
     options (2.3.2)
+    orm_adapter (0.5.0)
     pg (0.15.1)
     polyglot (0.3.5)
     pr_geohash (1.0.0)
@@ -97,6 +106,8 @@ GEM
     redis (3.1.0)
     redis-namespace (1.5.1)
       redis (~> 3.0, >= 3.0.4)
+    responders (1.1.2)
+      railties (>= 3.2, < 4.2)
     resque (1.25.2)
       mono_logger (~> 1.0)
       multi_json (~> 1.0)
@@ -152,6 +163,8 @@ GEM
       raindrops (~> 0.7)
     vegas (0.1.11)
       rack (>= 1.0.0)
+    warden (1.2.3)
+      rack (>= 1.0)
     will_paginate (3.0.7)
     will_paginate-bootstrap (1.0.1)
       will_paginate (>= 3.0.3)
@@ -163,6 +176,7 @@ DEPENDENCIES
   bootstrap-sass (= 3.2.0)
   bootstrap_form
   coffee-rails (= 4.0.1)
+  devise
   jbuilder (= 1.0.2)
   jquery-rails (= 3.0.4)
   newrelic_rpm
